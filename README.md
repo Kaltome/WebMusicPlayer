@@ -1,6 +1,8 @@
 # WebMusicPlayer
 A simple web musicplayer
 
+![](https://github.com/Kaltome/WebMusicPlayer/blob/master/show.jpg)
+
 <br/>
 
 ## To do:
@@ -31,3 +33,10 @@ A simple web musicplayer
 
 ## Main File:
 
+/Views/Music/MusicPlayer.cshtml
+
+/wwwroot/css/MusicPlayer/MusicPlayer.css
+
+/wwwroot/js/MusicPlayer/MusicPlayer.js
+
+/wwwroot/js/MusicPlayer/Animation.js
