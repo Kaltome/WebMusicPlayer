@@ -1,6 +1,8 @@
 # WebMusicPlayer
 A simple web musicplayer
 
+[Go(Local server) → ](http://kaltome.vipgz2.idcfengye.com/)
+
 ![](https://github.com/Kaltome/WebMusicPlayer/blob/master/show.jpg)
 
 <br/>
