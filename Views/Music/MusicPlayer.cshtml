@@ -1,0 +1,102 @@
+﻿@{
+    Layout = null;
+}
+
+@model Music
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MusicPlayer</title>
+    <link rel="icon" type="image/x-ico" href="~/src/Image/MusicPlayer/complete.ico" />
+    <link rel="stylesheet" href="~/css/MusicPlayer/MusicPlayer.css" />
+    <script src="~/js/MusicPlayer/MusicPlayer.js"></script>
+    <script src="~/js/MusicPlayer/Animation.js"></script>
+    <script src="~/js/jquery-3.4.1.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <span id="no" style="opacity:0" oncontextmenu="return false;" ondragstart="return false;">@Model.no</span>
+    <audio id="audio" src="~/src/Music/@Model.name"></audio>
+
+    <!-- 背景 -->
+    <div>
+        <img class="bgImg" id="albumBg1" style="display:none" onload="showImg(this)" oncontextmenu="return false;" ondragstart="return false;" onclick="return false;" src="~/src/Image/MusicPlayer/@Model.albumImg" />
+        <img class="bgImg" id="albumBg2" style="display:none" onload="showImg(this)" oncontextmenu="return false;" ondragstart="return false;" onclick="return false;" />
+    </div>
+
+    <!-- 本体 -->
+    <div class="musicPlayer">
+        <img class="album" src="~/src/Image/MusicPlayer/@Model.albumImg" id="albumImg" style="display:none" onload="showImg(this)" />
+
+        <div class="musicBar">
+            <!-- 导航区域 -->
+            <div class="navigation">
+                <img src="~/src/Image/MusicPlayer/list.png" class="list" id="list" onclick="showLyrics()"/>
+                <img src="~/src/Image/MusicPlayer/more.png" class="more" id="more" onclick="showDescriptions()"/>
+                <a href="~/Pixiv_Redesign/Test1/indexmy.html">
+                    <img src="~/src/Image/MusicPlayer/close.png" class="close" />
+                </a>
+            </div>
+            <!-- 信息区域 -->
+            <div class="message">
+                <span class="title" id="title">@Model.title</span>
+                <span class="artist" id="artist">@Model.artist · @Model.album</span>
+                <div class="headLine"></div>
+                <div id="descriptions">
+                    <span class="descriptionTitle" id="descriptionTitle">@Model.musicDescription.title</span>
+                    <pre class="description" id="description">@Model.musicDescription.description</pre>
+                </div>
+                <div id="lyrics" style="display:none">
+                    <pre class="lyric">暂无歌词</pre>
+                </div>
+            </div>
+            <!-- 控制区域 -->
+            <div class="control">
+                <img src="~/src/Image/MusicPlayer/Random.png" class="random" id="randomButton" />
+                <img src="~/src/Image/MusicPlayer/last.png" class="last" id="lastButton" onclick="lastMusic()" />
+                <img src="~/src/Image/MusicPlayer/pause.png" class="isplayed" id="playButton" onclick="playMusic()" />
+                <img src="~/src/Image/MusicPlayer/next.png" class="next" id="nextButton" onclick="nextMusic()" />
+                <img src="~/src/Image/MusicPlayer/loop.png" class="loop" id="loopButton" onclick="setLoop()" />
+            </div>
+        </div>
+        <!-- 进度条区域 -->
+        <div class="progressBar">
+            <div class="time" style="position:absolute;left:0%;" id="currentTime">00: 00</div>
+            <div class="time" style="position:absolute;right:0%;" id="duration">@Model.duration</div>
+            <div class="progress" id="progress">
+                <div class="progressControl"></div>
+                <div class="progressLine" style="width:100%;" id="progressLine"></div>
+                <div class="progressLine" style="opacity:0.4" id="loadprogress"></div>
+                <div class="progressLine" style="opacity:1.0" id="currentprogress"></div>
+                <div class="point" id="point"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        playButton = document.getElementById("playButton");
+        loopButton = document.getElementById("loopButton");
+        audio = document.getElementById('audio');
+        progress = document.getElementById("progress");
+
+        audio.onended = function () {
+            stopPlaying(1);
+        };
+        audio.onprogress = function () {
+            loadprogressLine();
+        };
+        audio.onwaiting = function () {
+            setbLink("point", 800);
+        };
+        audio.oncanplay = function () {
+            clearbLink("point");
+        }
+        progress.onmousedown = progressBarListener;
+
+    </script>
+</body>
+</html>
