@@ -209,15 +209,19 @@ var progressBarListener = function (e) {
     var length = document.body.clientWidth * 0.75 - 120;
 
     clearInterval(playTimer);
+
     timePoint = (e.clientX - document.body.clientWidth * 0.125 - 70) / length;
+    if (timePoint > 1) timePoint = 1;
+    else if (timePoint < 0) timePoint = 0;
+    document.getElementById("point").style.left = timePoint * 100 + "%";
+    document.getElementById("currentprogress").style.width = timePoint * 100 + "%";
 
     document.onmousemove = function (e) {
         e.stopPropagation();
-        timePoint = (e.clientX - document.body.clientWidth * 0.125 - 70) / length;
 
+        timePoint = (e.clientX - document.body.clientWidth * 0.125 - 70) / length;
         if (timePoint > 1) timePoint = 1;
         else if (timePoint < 0) timePoint = 0;
-
         document.getElementById("point").style.left = timePoint * 100 + "%";
         document.getElementById("currentprogress").style.width = timePoint * 100 + "%";
     }
