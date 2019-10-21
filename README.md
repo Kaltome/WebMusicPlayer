@@ -26,6 +26,7 @@ A simple web musicplayer
 <br/>
 
 - [ ] Random play
+- [ ] Volume Control
 - [ ] Music List
 - [ ] Lyric
 - [ ] Responsive Web
