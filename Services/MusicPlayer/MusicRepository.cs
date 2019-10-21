@@ -23,8 +23,10 @@ namespace MusicPlayer.Services.MusicPlayer
                     duration = "04: 38",
                     musicDescription = new MusicDescription
                     {
-                        title = "头图专用曲",
-                        description = "不愧是设计大师JP推荐的播放器头曲，封面可真是霸气呢，让我本身丑陋的播放器提升了好几个档次。\n\n不过令人可惜，这仅仅是个头曲罢了，曲子的风格，我们没几个人是喜欢的，只有JP他自己。"
+                        //title = "头图专用曲",
+                        title ="Head-image-Only Music",
+                        description = "It's indeed a pretty first song recommended by the design master, JP. So overbearing the cover is, which has improved my ugly player by several grades.\n\nHowever, It's a pity that it's just a first song. Few of us like the style of the song, only JP himself."
+                        //description = "不愧是设计大师JP推荐的播放器头曲，封面可真是霸气呢，让我本身丑陋的播放器提升了好几个档次。\n\n不过令人可惜，这仅仅是个头曲罢了，曲子的风格，我们没几个人是喜欢的，只有JP他自己。"
                     }
                 },
 

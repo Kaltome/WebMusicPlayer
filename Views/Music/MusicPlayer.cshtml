@@ -1,11 +1,9 @@
 ﻿@{
     Layout = null;
 }
-
 @model Music
 
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -20,7 +18,7 @@
 
 <body>
     <span id="no" style="opacity:0" oncontextmenu="return false;" ondragstart="return false;">@Model.no</span>
-    <audio id="audio" src="~/src/Music/@Model.name"></audio>
+    <audio id="audio" src="~/src/Music/@Model.name" preload="auto" ></audio>
 
     <!-- 背景 -->
     <div>
@@ -83,6 +81,7 @@
         audio = document.getElementById('audio');
         progress = document.getElementById("progress");
 
+        audio.volume = 0.8;
         audio.onended = function () {
             stopPlaying(1);
         };
@@ -96,7 +95,6 @@
             clearbLink("point");
         }
         progress.onmousedown = progressBarListener;
-
     </script>
 </body>
 </html>

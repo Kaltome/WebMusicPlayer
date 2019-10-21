@@ -159,7 +159,7 @@ pre {
 .descriptionTitle {
     position: absolute;
     left: 0px;
-    top: calc(30px + 8.75%);
+    top: calc(30px + 9%);
     width: 100%;
     font-weight: 400;
     font-size: 24px;

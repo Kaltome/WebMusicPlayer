@@ -160,6 +160,7 @@ function setNewMusic(newMusic) {
             progress.onmousedown = progressBarListener;
             setNewMessage();
             changeBgImg();
+            showDescriptions();
             isload = 1;
             setTimeout(function () { door = 0; }, 1200);
         }
