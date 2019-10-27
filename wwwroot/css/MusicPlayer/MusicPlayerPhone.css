@@ -1,0 +1,272 @@
+﻿@font-face {
+    font-family: default;
+    src: url('/src/Fonts/GoogleSans-Regular.ttf'), 
+        url('/src/Fonts/SourceHanSansCN-Regular.otf'), 
+        url('/src/Fonts/SourceHanSansCN-Normal.otf'),
+        url('/src/Fonts/SourceHanSansCN-Light.otf'),
+        url('/src/Fonts/SourceHanSansCN-ExtraLight.otf'),
+        url('/src/Fonts/SourceHanSerifJP-Regular.otf'),
+        url('/src/Fonts/SourceHanSerifJP-Light.otf');
+}
+
+@font-face {
+    font-family: message;
+    src: url('/src/Fonts/bahnschrift.ttf'), 
+        url('/src/Fonts/SourceHanSansCN-Regular.otf'), 
+        url('/src/Fonts/SourceHanSansCN-Normal.otf'), 
+        url('/src/Fonts/SourceHanSansCN-Light.otf'), 
+        url('/src/Fonts/SourceHanSansCN-ExtraLight.otf'), 
+        url('/src/Fonts/SourceHanSerifJP-Regular.otf'), 
+        url('/src/Fonts/SourceHanSerifJP-Light.otf');
+    
+}
+
+
+html {
+    font-size: 2vw;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: default;
+    width:100%;
+    height:100%
+}
+
+.bgImg {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-filter: blur(60px);
+    -moz-filter: blur(60px);
+    -ms-filter: blur(60px);
+    filter: blur(60px);
+    overflow: hidden;
+    height: 120%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0.8;
+}
+
+.musicPlayer {
+    position: absolute;
+    bottom:0;
+    left: 6%;
+    width: 88%;
+    height: 98%;
+}
+
+.album {
+    position: relative;
+    top: 8vw;
+    margin: 0px;
+    width: 100%;
+    border-radius: 8px;
+    -moz-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+.musicBar {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 8vh);
+    bottom: 8vh;
+}
+
+.navigation {
+    opacity: 1.0;
+}
+
+.list {
+    position: absolute;
+    left: 0px;
+    width: 5%;
+}
+
+.more {
+    position: absolute;
+    left: 15%;
+    width: 5%;
+}
+
+.close {
+    position: absolute;
+    right: 0px;
+    width: 5%;
+}
+
+.control {
+    width: 20px;
+}
+
+.random {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 5%;
+}
+
+.last {
+    position: absolute;
+    bottom: 0px;
+    left: 30.8%;
+    width: 5%;
+}
+
+.isplayed {
+    position: absolute;
+    bottom: 0px;
+    left: 47.5%;
+    width: 5%;
+}
+
+.next {
+    position: absolute;
+    bottom: 0px;
+    left: 64.2%;
+    width: 5%;
+}
+
+.loop {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 5%;
+    opacity: 0.4;
+}
+
+.message {
+    font-family: message;
+    color: #FFFFFF;
+}
+
+pre {
+    white-space: pre-wrap; /*css-3*/
+    white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+    white-space: -pre-wrap; /*Opera4-6*/
+    white-space: -o-pre-wrap; /*Opera7*/
+    word-wrap: break-word; /*InternetExplorer5.5+*/
+}
+
+.headLine {
+    position: absolute;
+    top: calc(10% + 4.5vw);
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    opacity: 0;
+}
+
+.descriptionTitle {
+    position: absolute;
+    left: 0px;
+    top: calc(96vw + 2.8%);
+    width: 100%;
+    font-weight: 400;
+    font-size: 2.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.description {
+    position: absolute;
+    top: calc(96vw + 6.4%);
+    left: 0px;
+    width: 100%;
+    height: calc(10%);
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+.lyric {
+    position: absolute;
+    top: calc(96vw + 2.8%);
+    left: 0%;
+    width: 85%;
+    font-family: none;
+    font-size: 1.4rem;
+    opacity: 0.4;
+}
+
+.title {
+    position: absolute;
+    bottom: calc(1.8% + 3vw);
+    left: 0px;
+    font-weight: 400;
+    font-size: 2.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.artist {
+    position: absolute;
+    bottom: calc(3.4% + 6.8vw);
+    left: 0px;
+    font-weight: 200;
+    font-size: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.6;
+}
+
+.progressBar{
+    position:absolute;
+    bottom:0;
+    height:8vh;
+    width:100%;
+}
+
+.time {
+    position: absolute;
+    bottom:calc(50% - 1.7vw);
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.progress {
+    position: absolute;
+    bottom:0;
+    left: 12.5%;
+    width: 75%;
+}
+
+.progressLine {
+    position: absolute;
+    bottom: 3.85vh;
+    height: 0.3vh;
+    width: 0px;
+    background: #FFFFFF;
+    opacity: 0.16;
+}
+
+.progressControl {
+    position: absolute;
+    bottom: 3.2vh;
+    height: 1.6vh;
+    width: calc(100% - 120px);
+    background: #FFFFFF;
+    opacity: 0;
+}
+
+.point {
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 3.2vh;
+    height: 1.6vh;
+    width: 3px;
+}
