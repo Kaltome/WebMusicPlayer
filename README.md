@@ -26,11 +26,11 @@ A simple web musicplayer
 
 <br/>
 
-- [ ] Random play (Not plan to do)
-- [ ] Volume Control (Not plan to do)
-- [ ] Music List (Not plan to do)
-- [ ] Lyric (Not plan to do)
-- [ ] Redesign (Not plan to do)
+- [ ] Random play  (Not plan to do)
+- [ ] Volume Control  (Not plan to do)
+- [ ] Music List  (Not plan to do)
+- [ ] Lyric  (Not plan to do)
+- [ ] Redesign  (Not plan to do)
 
 <br/>
 
