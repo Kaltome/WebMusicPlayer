@@ -23,10 +23,10 @@ namespace MusicPlayer.Services.MusicPlayer
                     duration = "04: 38",
                     musicDescription = new MusicDescription
                     {
-                        //title = "头图专用曲",
-                        title ="Head-image-Only Music",
-                        description = "It's indeed a pretty first song recommended by the design master, JP. So overbearing the cover is, which has improved my ugly player by several grades.\n\nHowever, It's a pity that it's just a first song. Few of us like the style of the song, only JP himself."
-                        //description = "不愧是设计大师JP推荐的播放器头曲，封面可真是霸气呢，让我本身丑陋的播放器提升了好几个档次。\n\n不过令人可惜，这仅仅是个头曲罢了，曲子的风格，我们没几个人是喜欢的，只有JP他自己。"
+                        title = "头图专用曲",
+                        //title ="Head-image-Only Music",
+                        //description = "It's indeed a pretty first song recommended by the design master, JP. So overbearing the cover is, which has improved my ugly player by several grades.\n\nHowever, It's a pity that it's just a first song. Few of us like the style of the song, only JP himself."
+                        description = "不愧是设计大师JP推荐的播放器头曲，封面可真是霸气呢，让我本身丑陋的播放器提升了好几个档次。\n\n不过令人可惜，这仅仅是个头曲罢了，曲子的风格，我们没几个人是喜欢的，只有JP他自己。"
                     }
                 },
 
@@ -206,7 +206,7 @@ namespace MusicPlayer.Services.MusicPlayer
                     {
                         //\n\n圣皇的世界，凡人是无法了解的。被圣皇脑海中游荡的艺术气息包围，虽然对于音痴来讲是一片朦胧
                         title = "终符之后",
-                        description = "利用八云紫本身的主旋律的和声伴奏作为铺垫，配以急速的钢琴，再衔接原初的高潮，是否营造出了一种击破之后，真正的弹幕结界才正式降临的氛围？\n\n除了铺垫的和声伴奏，前半部分都是自己尝试的，也算个了结吧。\n\n" +
+                        description = "利用八云紫本身主旋律的和声伴奏作为铺垫，配以急速的钢琴，再衔接原本的高潮，是否营造出了一种击破后，真正的弹幕结界才正式降临的氛围？\n\n除了铺垫的和声伴奏，前半部分都是自己尝试的，也算个了结吧。\n\n" +
                         "可惜，垃圾再怎么燃烧激情的焰火，最后都只是污染空气而已。"
                       
                     }

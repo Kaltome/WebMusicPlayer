@@ -132,6 +132,7 @@ function changeMusic(url) {
     progress.onmousedown = null;
     document.onmousemove = null;
     document.onmouseup = null;
+
     clearInterval(playTimer);
     clearprogressLine();
 
@@ -162,7 +163,7 @@ function setNewMusic(newMusic) {
             changeBgImg();
             showDescriptions();
             isload = 1;
-            setTimeout(function () { door = 0; }, 1200);
+            setTimeout(function () { door = 0; }, 1000);
         }
         clearbLink("point");
     }
@@ -226,6 +227,7 @@ var progressBarListener = function (e) {
         document.getElementById("currentprogress").style.width = timePoint * 100 + "%";
     }
 
+
     document.onmouseup = function (e) {
         audio.pause();
         audio.currentTime = timePoint * audio.duration;
@@ -237,6 +239,8 @@ var progressBarListener = function (e) {
     }
     return false;
 }
+
+
 
 function showImg(ts) {
     ts.style.display = 'block';
