@@ -13,6 +13,8 @@ A simple web musicplayer
 - [x] Playing
 - [x] Switch music
 - [x] Loop
+- [x] Close
+- [x] Show descriptions
 - [x] Changing animation
 - [x] loading animation
 - [x] Progress animation
@@ -20,17 +22,15 @@ A simple web musicplayer
   - [x] Current progress and current time
   - [x] Point
 - [x] Progress control
-- [x] Show descriptions
-- [x] Close
+- [x] Responsive Web
 
 <br/>
 
-- [ ] Random play
-- [ ] Volume Control
-- [ ] Music List
-- [ ] Lyric
-- [ ] Responsive Web
-- [ ] Redesign
+- [ ] Random play (Not plan to do)
+- [ ] Volume Control (Not plan to do)
+- [ ] Music List (Not plan to do)
+- [ ] Lyric (Not plan to do)
+- [ ] Redesign (Not plan to do)
 
 <br/>
 
@@ -38,7 +38,7 @@ A simple web musicplayer
 
 /Views/Music/MusicPlayer.cshtml
 
-/wwwroot/css/MusicPlayer/MusicPlayer.css
+/wwwroot/css/MusicPlayer/MusicPlayerxxx.css
 
 /wwwroot/js/MusicPlayer/MusicPlayer.js
 
